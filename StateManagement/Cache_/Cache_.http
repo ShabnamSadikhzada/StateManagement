@@ -1,0 +1,22 @@
+@Cache__HostAddress = http://localhost:5107 
+@categoriesUrl = {{Cache__HostAddress}}/api/categories
+
+
+
+
+GET {{categoriesUrl}}
+Accept: application/json
+
+
+###
+
+
+POST {{categoriesUrl}}
+Content-Type: application/json
+Accept: application/json
+  
+{
+  "categoryName": "Category 1",
+  "description": "Category 1 description"
+}
+ 

@@ -1,0 +1,14 @@
+@Session__HostAddress = http://localhost:5163
+
+GET {{Session__HostAddress}}/api/categories
+Accept: application/json
+
+###
+
+POST {{Session__HostAddress}}/api/categories
+Content-Type: application/json
+Accept: application/json
+{
+  "categoryName": "Category 2",
+  "description": "Category 2 description"
+} 
